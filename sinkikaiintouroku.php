@@ -7,5 +7,5 @@ const PASS = 'pocketRoom';
 ?>
 <?php
 $pdo = new PDO($connect,USER,PASS);
-
+$sql= "insert into customer(customer_id,customer_name,address,login,password) values()"
 ?>
