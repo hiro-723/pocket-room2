@@ -11,6 +11,7 @@ $sql= "select * from customer where login=? and password=?";
 $stmt= $pdo->prepare($sql);
 $stmt->execute([$_POST['login'],$_POST['password']]);
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
+$password = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if ($user && $password) {
         // ログイン成功
@@ -22,5 +23,4 @@ if ($user && $password) {
         echo "<p>ユーザーネームまたはパスワードが間違っています。</p>";
         echo "<a href='login.html'>戻る</a>";
     }
-?>
 ?>
