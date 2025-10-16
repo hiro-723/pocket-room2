@@ -20,7 +20,7 @@ $user = $_SESSION['user']; // ログイン中ユーザー情報
     <h2>POCKET ROOM</h2>
     <p>ようこそ、<?php echo htmlspecialchars($user['customer_name']); ?> さん！</p>
 
-    <form method="get" action="search.php">
+    <form  action="search.php" method="post">
         <label>検索：</label>
         <input type="text" name="keyword">
         <input type="submit" value="検索">
