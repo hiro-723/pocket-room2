@@ -1,0 +1,82 @@
+body {
+  background-color: #fffaf0;
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 250px;
+  margin: 0 auto;
+  background-color: #fff1dc;
+  min-height: 100vh;
+  padding-bottom: 80px; /* ナビ分の余白 */
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0 10px;
+  border-bottom: 1px solid #b88c4a;
+}
+
+header h1 {
+  font-size: 20px;
+  color: #633;
+  font-weight: bold;
+  border-bottom: 2px solid #b88c4a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+main {
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.menu .icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* 下部ナビバー */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5d5a5;
+  border-top: 1px solid #c8a86e;
+}
+
+.bottom-nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 5px 0;
+  list-style: none;
+}
+
+.bottom-nav li {
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+}
