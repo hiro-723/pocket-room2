@@ -16,11 +16,11 @@ $password = $stmt->fetch(PDO::FETCH_ASSOC);
 if ($user && $password) {
         // ログイン成功
         $_SESSION['user'] = $user['customer_name'];
-        echo "<p>ログイン成功！ようこそ、" . htmlspecialchars($user['customer_name']) . " さん。</p>";
-        echo "<a href='mypage.php'>マイページへ進む</a>";
+        header("Location: home.php");
+        exit;
     } else {
         // ログイン失敗
         echo "<p>ユーザーネームまたはパスワードが間違っています。</p>";
-        echo "<a href='login.html'>戻る</a>";
+        echo "<a href='rogin.html'>戻る</a>";
     }
 ?>
