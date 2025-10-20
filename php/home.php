@@ -39,10 +39,10 @@ $user = $_SESSION['user']; // ログイン中ユーザー情報
     <hr>
 
     <p>
+        <a href="home.php">ホーム</a>
         <a href="favorite.php">お気に入り</a> |
         <a href="cart.php">カート</a> |
         <a href="mypage.php">マイページ</a> |
-        <a href="logout.php">ログアウト</a>
     </p>
 </body>
 </html>

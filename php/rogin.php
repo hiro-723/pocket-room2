@@ -7,6 +7,7 @@ const PASS = 'pocketRoom';
     $connect = 'mysql:host='. SERVER . ';dbname='. DBNAME . ';charset=utf8';
 
 $pdo= new PDO($connect,USER,PASS);
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $sql= "select * from customer where customer_name=? and password=?";
 $stmt= $pdo->prepare($sql);
 $stmt->execute([$_POST['username'],$_POST['password']]);
@@ -21,5 +22,6 @@ if ($user) {
         // ログイン失敗
         echo "<p>ユーザーネームまたはパスワードが間違っています。</p>";
         echo "<a href='rogin.html'>戻る</a>";
+        exit;
     }
 ?>
