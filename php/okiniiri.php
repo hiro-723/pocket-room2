@@ -7,11 +7,7 @@ if (!isset($_SESSION['username'])) {
     exit;
 }
 
-const SERVER = 'mysql326.phy.lolipop.lan';
-const DBNAME = 'LAA1607632-pocketroom';
-const USER = 'LAA1607632';
-const PASS = 'pocketRoom';
-    $connect = 'mysql:host='. SERVER . ';dbname='. DBNAME . ';charset=utf8';
+
 
 $pdo = new PDO($connect, USER, PASS);
 $username = $_SESSION['username'];
