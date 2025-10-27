@@ -1,5 +1,5 @@
 body {
-  background-color: #fffaf0;
+  background-color: #fff1dc;
   font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   margin: 0;
   padding: 0;
@@ -12,17 +12,15 @@ body {
   background-color: #fff1dc;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 h2 {
   font-size: 16px;
-  color: #999;
+  color: black;
   margin-bottom: 15px;
 }
 
 .product-card {
-  background-color: #fdf9f3;
   padding: 10px;
   border-radius: 5px;
 }
