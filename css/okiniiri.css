@@ -1,121 +1,112 @@
-:root {
-  --bg-color: #fff3d6;
-  --text-color: #4b2e05;
-  --button-bg: #e3b97b;
-  --button-hover: #d6a764;
-  --input-border: #bba77a;
-}
-
 body {
-  font-family: "Noto Sans JP", sans-serif;
-  background-color: var(--bg-color);
+  background: #fff1dc;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
   margin: 0;
-  padding: 0;
 }
 
-.header {
+.container {
+  width: 250px;
+  margin: 0 auto;
+  background: #fff1dc;
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+/* ヘッダー */
+header {
   text-align: center;
-  padding: 20px 0 10px;
+  padding: 15px 0;
 }
 
-.logo {
-  font-family: "Georgia", serif;
-  color: var(--text-color);
-  font-size: 28px;
-  line-height: 1.2;
+header h1 {
+  font-size: 20px;
+  color: #633;
+  border-bottom: 2px solid #b88c4a;
+  display: inline-block;
 }
 
-.page-title {
+/* 検索ボックス */
+.search-box {
   text-align: center;
-  color: var(--text-color);
-  font-size: 18px;
-  margin-bottom: 14px;
+  margin: 15px 0 25px;
 }
 
-.okiniiri-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 0 16px 80px;
-}
-
-.okiniiri-item {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 8px;
-}
-
-.okiniiri-item img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-right: 12px;
-}
-
-.info {
-  flex: 1;
-}
-
-.info .name {
-  font-size: 14px;
-  color: var(--text-color);
-  margin: 2px 0;
-}
-
-.info .price {
-  font-size: 13px;
-  color: #8b6d36;
-}
-
-.delete-btn {
-  background: transparent;
+.search-box input {
+  width: 80%;
+  padding: 6px;
+  border-radius: 15px;
   border: none;
-  font-size: 18px;
-  cursor: pointer;
-  color: var(--text-color);
-  transition: opacity 0.2s;
-}
-
-.delete-btn:hover {
-  opacity: 0.7;
-}
-
-.empty-message {
+  background: #d9d9d9;
   text-align: center;
-  color: #7b6a45;
-  font-size: 14px;
-  margin-top: 40px;
 }
 
-/* 下部ナビ */
-.bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  display: flex;
-  justify-content: space-around;
-  border-top: 1px solid #ccc;
-  padding: 6px 0;
+/* 商品一覧 */
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  justify-items: center;
 }
 
-.bottom-nav a {
-  text-decoration: none;
-  color: var(--text-color);
+.item {
   text-align: center;
   font-size: 12px;
 }
 
-.bottom-nav a span {
-  display: block;
-  font-size: 10px;
+.img-box {
+  width: 70px;
+  height: 70px;
+  background: #d9d9d9;
+  margin-bottom: 5px;
 }
 
-.bottom-nav a.active {
-  color: var(--button-hover);
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+/* 下ナビ */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #f5d5a5;
+}
+
+.bottom-nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  list-style: none;
+  margin: 0;
+}
+
+.bottom-nav li {
+  text-align: center;
+  font-size: 13px;
+}
+
+/* ナビボタン（ボタンに見せない） */
+.nav-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.nav-btn:focus {
+  outline: none;
+}
+
+.nav-btn:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
 }

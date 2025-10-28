@@ -1,5 +1,5 @@
 body {
-  background-color: #fffaf0;
+  background: #fff1dc;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
   margin: 0;
 }
@@ -14,7 +14,7 @@ body {
 
 header {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 0 10px;
 }
 
 header h1 {
@@ -60,22 +60,3 @@ button {
   cursor: pointer;
 }
 
-.bottom-nav {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #f5d5a5;
-}
-
-.bottom-nav ul {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 5px 0;
-  list-style: none;
-}
-
-.bottom-nav li {
-  text-align: center;
-  font-size: 13px;
-}

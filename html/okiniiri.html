@@ -3,54 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>POCKET ROOM - okiniiri</title>
+  <title>お気に入り</title>
   <link rel="stylesheet" href="okiniiri.css">
 </head>
 <body>
-  <header class="header">
-    <h1 class="logo">POCKET<br>ROOM</h1>
-  </header>
+  <div class="container">
+    <header>
+      <h1>POCKET ROOM</h1>
+    </header>
 
-  <main class="main-content">
-    <h2 class="page-title">okiniiri</h2>
-
-    <div class="okiniiri-list">
-      <div class="okiniiri-item">
-        <img src="img/item1.jpg" alt="商品1">
-        <div class="info">
-          <p class="name">木製チェア</p>
-          <p class="price">¥4,500</p>
-        </div>
-        <button class="delete-btn">🗑️</button>
+    <main>
+      <div class="search-box">
+        <input type="text" placeholder="🔍 検索">
       </div>
 
-      <div class="okiniiri-item">
-        <img src="img/item2.jpg" alt="商品2">
-        <div class="info">
-          <p class="name">デザインランプ</p>
-          <p class="price">¥6,800</p>
+      <div class="item-grid">
+        <div class="item">
+          <div class="img-box"></div>
+          <p>商品<br>金額</p>
+          <div class="icons">
+            <span>❤️</span>
+            <span>🛒</span>
+          </div>
         </div>
-        <button class="delete-btn">🗑️</button>
-      </div>
-
-      <div class="okiniiri-item">
-        <img src="img/item3.jpg" alt="商品3">
-        <div class="info">
-          <p class="name">観葉植物</p>
-          <p class="price">¥3,200</p>
+        <div class="item">
+          <div class="img-box"></div>
+          <p>商品<br>金額</p>
+          <div class="icons">
+            <span>❤️</span>
+            <span>🛒</span>
+          </div>
         </div>
-        <button class="delete-btn">🗑️</button>
+        <div class="item">
+          <div class="img-box"></div>
+          <p>商品<br>金額</p>
+          <div class="icons">
+            <span>❤️</span>
+            <span>🛒</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-box"></div>
+          <p>商品<br>金額</p>
+          <div class="icons">
+            <span>❤️</span>
+            <span>🛒</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-box"></div>
+          <p>商品<br>金額</p>
+          <div class="icons">
+            <span>❤️</span>
+            <span>🛒</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-box"></div>
+          <p>商品<br>金額</p>
+          <div class="icons">
+            <span>❤️</span>
+            <span>🛒</span>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <p class="empty-message" style="display:none;">okiniiriに商品がありません。</p>
-  </main>
+    </main>
+  </div>
 
   <nav class="bottom-nav">
-    <a href="home.html">🏠<span>ホーム</span></a>
-    <a href="okiniiri.html" class="active">❤️<span>okiniiri</span></a>
-    <a href="cart.html">🛒<span>カート</span></a>
-    <a href="mypage.html">👤<span>マイページ</span></a>
+    <ul>
+      <li><button class="nav-btn" onclick="location.href='home.html'">🏠<br>ホーム</button></li>
+      <li><button class="nav-btn" onclick="location.href='favorites.html'">❤️<br>お気に入り</button></li>
+      <li><button class="nav-btn" onclick="location.href='item.html'">🧸<br></button></li>
+      <li><button class="nav-btn" onclick="location.href='cart.html'">🛒<br>カート</button></li>
+      <li><button class="nav-btn" onclick="location.href='mypage.html'">👤<br>マイページ</button></li>
+    </ul>
   </nav>
 </body>
 </html>
