@@ -11,21 +11,35 @@
     <header><h1>POCKET ROOM</h1></header>
     <main>
       <h2>ヘルプ</h2>
-      <ul>
-        <li>住所変更の仕方</li>
-        <li>購入方法</li>
-        <li>お気に入り登録</li>
-      </ul>
+      <nav class="hel-nav">
+        <ul>
+          <li><button class="hel-btn" onclick="location.href='address_change.html'">住所変更の仕方</button></li>
+          <li><button class="hel-btn" onclick="location.href='purchase_guide.html'">購入方法</button></li>
+          <li><button class="hel-btn" onclick="location.href='favorites.html'">お気に入り登録</button></li>
+        </ul>
+      </nav>
+      
     </main>
   </div>
+  
   <nav class="bottom-nav">
-    <ul>
-      <li>🏠<br>ホーム</li>
-      <li>❤️<br>お気に入り</li>
-      <li>🧸<br></li>
-      <li>🛒<br>カート</li>
-      <li>👤<br>マイページ</li>
-    </ul>
-  </nav>
+  <ul>
+    <li>
+      <button class="nav-btn" onclick="location.href='home.html'">🏠<br>ホーム</button>
+    </li>
+    <li>
+      <button class="nav-btn" onclick="location.href='favorites.html'">❤️<br>お気に入り</button>
+    </li>
+    <li>
+      <button class="nav-btn" onclick="location.href='item.html'">🧸<br></button>
+    </li>
+    <li>
+      <button class="nav-btn" onclick="location.href='cart.html'">🛒<br>カート</button>
+    </li>
+    <li>
+      <button class="nav-btn" onclick="location.href='mypage.html'">👤<br>マイページ</button>
+    </li>
+  </ul>
+</nav>
 </body>
 </html>
